@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A2FE549A220F25F200FAE9A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE5499220F25F200FAE9A9 /* AppDelegate.swift */; };
-		A2FE549C220F25F200FAE9A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE549B220F25F200FAE9A9 /* ViewController.swift */; };
 		A2FE549F220F25F200FAE9A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FE549D220F25F200FAE9A9 /* Main.storyboard */; };
 		A2FE54A1220F25F200FAE9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FE54A0220F25F200FAE9A9 /* Assets.xcassets */; };
 		A2FE54A4220F25F200FAE9A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FE54A2220F25F200FAE9A9 /* LaunchScreen.storyboard */; };
 		A2FE54AF220F25F200FAE9A9 /* MVVMSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE54AE220F25F200FAE9A9 /* MVVMSwiftTests.swift */; };
 		A2FE54BA220F25F200FAE9A9 /* MVVMSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE54B9220F25F200FAE9A9 /* MVVMSwiftUITests.swift */; };
+		A2FE54CC220F268A00FAE9A9 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE54CB220F268A00FAE9A9 /* Student.swift */; };
+		A2FE54CE220F270200FAE9A9 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE54CD220F270200FAE9A9 /* StudentListViewController.swift */; };
+		A2FE54D0220F276100FAE9A9 /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE54CF220F276100FAE9A9 /* StudentListViewModel.swift */; };
+		A2FE54D6220F44E500FAE9A9 /* CellStudentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE54D5220F44E500FAE9A9 /* CellStudentList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		A2FE5496220F25F200FAE9A9 /* MVVMSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FE5499220F25F200FAE9A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2FE549B220F25F200FAE9A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2FE549E220F25F200FAE9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2FE54A0220F25F200FAE9A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2FE54A3220F25F200FAE9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		A2FE54B5220F25F200FAE9A9 /* MVVMSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FE54B9220F25F200FAE9A9 /* MVVMSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSwiftUITests.swift; sourceTree = "<group>"; };
 		A2FE54BB220F25F200FAE9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2FE54CB220F268A00FAE9A9 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		A2FE54CD220F270200FAE9A9 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		A2FE54CF220F276100FAE9A9 /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
+		A2FE54D5220F44E500FAE9A9 /* CellStudentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellStudentList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		A2FE5498220F25F200FAE9A9 /* MVVMSwift */ = {
 			isa = PBXGroup;
 			children = (
+				A2FE54CA220F264D00FAE9A9 /* ViewModel */,
+				A2FE54C9220F263E00FAE9A9 /* Model */,
+				A2FE54C8220F262600FAE9A9 /* ViewController */,
 				A2FE5499220F25F200FAE9A9 /* AppDelegate.swift */,
-				A2FE549B220F25F200FAE9A9 /* ViewController.swift */,
 				A2FE549D220F25F200FAE9A9 /* Main.storyboard */,
 				A2FE54A0220F25F200FAE9A9 /* Assets.xcassets */,
 				A2FE54A2220F25F200FAE9A9 /* LaunchScreen.storyboard */,
@@ -123,6 +131,31 @@
 				A2FE54BB220F25F200FAE9A9 /* Info.plist */,
 			);
 			path = MVVMSwiftUITests;
+			sourceTree = "<group>";
+		};
+		A2FE54C8220F262600FAE9A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE54CD220F270200FAE9A9 /* StudentListViewController.swift */,
+				A2FE54D5220F44E500FAE9A9 /* CellStudentList.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A2FE54C9220F263E00FAE9A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE54CB220F268A00FAE9A9 /* Student.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2FE54CA220F264D00FAE9A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE54CF220F276100FAE9A9 /* StudentListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2FE549C220F25F200FAE9A9 /* ViewController.swift in Sources */,
+				A2FE54D0220F276100FAE9A9 /* StudentListViewModel.swift in Sources */,
+				A2FE54CE220F270200FAE9A9 /* StudentListViewController.swift in Sources */,
+				A2FE54CC220F268A00FAE9A9 /* Student.swift in Sources */,
 				A2FE549A220F25F200FAE9A9 /* AppDelegate.swift in Sources */,
+				A2FE54D6220F44E500FAE9A9 /* CellStudentList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
